@@ -2,8 +2,51 @@ body {
 	/*font-family: Verdana, Arial, sans-serif;
 	font-size: 14px;
 	*/
+
+	background-color: white;
 }
 
 body > .container {
   padding: 60px 15px 0;
+}
+
+.project-item
+{
+	background-color: rgb(14, 14, 14);
+	color: white;
+	margin-bottom: 1em;
+}
+
+.project-item .info
+{
+	padding: 1em;
+}
+
+
+.project-item .desc
+{
+}
+
+.project-item .desc-footer
+{
+	margin-top: 1em;
+	padding-top: 0.5em;
+	border-top: 1px dotted gray;
+	text-align: right;
+}
+
+.project-item .desc-footer .date
+{
+	font-size: 0.7em;
+}
+
+.project-item h3
+{
+	margin-top: 0.5em;
+}
+
+.project-item img
+{
+	width: 100%;
+	border-bottom: 1px solid white;
 }
