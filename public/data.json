@@ -51,6 +51,18 @@
     "link": "http://vimeo.com/29605384",
     "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/TerrainWater.zip"}
   },
+  "perlin_particles": {
+    "date": "2011-9-14",
+    "title": "OpenCL Perlin Particles",
+    "desc": "<p>This is one of my first visual applications which uses OpenCL. This video features two-million particles running in realtime at 60hz. Perlin noise is used as a vector field for the particles to travel through. This was coded in C++ using my own personal graphics engine.</p>",
+    "more_links": {
+      "Vimeo": "http://vimeo.com/29074357", 
+      "Vimeo 2": "http://vimeo.com/29082224"
+    },
+    "link": "http://vimeo.com/29074357",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/PerlinOpenCL.zip"}
+  },
+
   "ray_marching": {
     "date": "2014-5-3",
     "title": "OpenCL Ray-Marching",
@@ -139,8 +151,15 @@
     "desc": "<p>Real-time audioreactive visualizer coded in my personal engine which uses C++ with OpenGL and Fmod libs. I applied some <a href='http://en.wikipedia.org/wiki/Greeble'>Greeble</a> tech to render the shattered aesthetic and applied simple vertex shading for the spread effect and post-processing for the glitchy aesthetic.</p> <p>Music by Otograph.</p>",
     "link": "http://vimeo.com/30789118"
   },
+  "flower_ritual": {
+    "date": "2014-5-3",
+    "title": "Flower Ritual",
+    "desc": "<p>Real-time audioreactive simulation which uses OpenGL for the rendering and Fmod for the sound. The Flower petal’s vertices and normals are procedurally generated every frame using bezier patches. Water reflection is done in the pixel shader using basic fresnel and normal map warping.</p>",
+    "link": "http://vimeo.com/30255064"
+  },
   "astronaut": {
     "date": "2014-5-3",
+    "highlight":1,
     "title": "The Astronaut",
     "desc": "<p>I wanted to experiment with the hand-drawn aesthetic rendered in real-time. I modeled this by offsetting lines and curves based on a Perlin to achieve that natural look. (12/2/2012)</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis.</p>",
     "link": "http://illogictree.com/app/astronaut/"
@@ -223,6 +242,13 @@
     "desc": "<p>Have you ever wondered what Perlin noise sounds like in musical form? Well, this app featured procedurally generated music that uses Perlin to conduct the harmony. The system iterates through a standard I-IV-V chord progression on the C-major scale and procedurally chooses the notes to be played.</p>",
     "link": "http://vimeo.com/30135045"
   },
+  "zen_machine": {
+    "date": "2014-5-3",
+    "title": "Zen Machine",
+    "desc": "<p>In an effort to mix color theory and music creation, I have concocted this visual music composer application. Each color on the wheel corresponds to one musical note in the C-Maj-7th chord. Coded in C++ using OpenFrameworks.</p>",
+    "link": "http://vimeo.com/16892078"
+  },
+
   "zen_galaxy": {
     "date": "2014-5-3",
     "title": "Zen Galaxy (Ribbon Boids)",
@@ -236,6 +262,14 @@
     "desc": "<p>This piece was heavily inspired by the movement and opacity of the ribbons from the Chinese ribbon dance. The movement of the lines are controlled by Perlin noise, which is one of the most delicious algorithms for natural movement. </p> <p>I began coding a new rendering engine from scratch (C++/OpenGL) and decided to use this visualizer as a proof-of-tech that the engine can actually render stuff on screen.  </p>",
     "link": "http://vimeo.com/25309612"
   },
+
+  "space_glue": {
+    "date": "2014-5-3",
+    "title": "Space Glue (Metaballs)",
+    "desc": "<p>Metaballs is an extremely effective way of rendering isosurfaces. This project utilizes a 2D rendition of the metaballs algorithm in which it uses simple distance calculation of points in the pixel shader. Coded in C++ using Cinder.</p>",
+    "link": "http://vimeo.com/20549084"
+  },
+
   "space_synth": {
     "date": "2014-5-3",
     "title": "Space Synth",
