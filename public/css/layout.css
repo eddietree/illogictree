@@ -14,7 +14,7 @@ body > .container {
 {
 	background-color: rgb(14, 14, 14);
 	color: white;
-	margin-bottom: 1em;
+	margin: 0 1em 1em 0;
 }
 
 .project-item .info
@@ -50,3 +50,6 @@ body > .container {
 	width: 100%;
 	border-bottom: 1px solid white;
 }
+
+.item { width: 33%; }
+.item.w2 { width: 66%; }
