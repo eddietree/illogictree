@@ -125,7 +125,12 @@
     "date": "2011-2-21",
     "title": "Black Star",
     "desc": "<p>This piece draws inspiration from two concepts: the black hole and the neutron star. Its gravity absorbs nearby matter, causing the system to be perturbed from its dynamical equilibrium.  The particle effects uses a modified <a href='http://www.red3d.com/cwr/boids/'>boids algorithm</a> and the light rays are rendered by sampling a 2D Perlin noise function.  Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p> <p>This piece was being shown at the <a href='http://www.flickr.com/photos/sfac/sets/72157626369768790/'>TRANSMUTATION</a> exhibit at <a href='http://gaffta.org/'>GAFTA</a>, located in San Francisco.</p>",
-    "link": "http://vimeo.com/20308223"
+    "more_links": {
+    	"Exhibition Desc":"LINK",
+    	"Vimeo":"http://vimeo.com/20192820"
+    },
+    "link": "http://vimeo.com/20192820",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/BlackStar.zip"}
   },
   "digitalstar": {
     "date": "2011-2-23",
@@ -345,7 +350,7 @@
   "delaunay": {
     "date": "2011-5-8",
     "title": "Delaunay Triangulation",
-    "desc": "<p><a href='http://en.wikipedia.org/wiki/Delaunay_triangulation'>Delaunary triangulation</a> takes a set of points and builds a triangulation such that satisfies the “empty circle” property. That is, for each triangle, we can circumscribe a circle such that no other points in the set can exist in the circle. The output of the triangulated graph produces the nearest neighbor graph of a given points. It has practical uses in geometry reconstruction and meshing of points.</p>",
+    "desc": "<p><a href='http://en.wikipedia.org/wiki/Delaunay_triangulation'>Delaunay triangulation</a> takes a set of points and builds a triangulation such that satisfies the “empty circle” property. That is, for each triangle, we can circumscribe a circle such that no other points in the set can exist in the circle. The output of the triangulated graph produces the nearest neighbor graph of a given points. It has practical uses in geometry reconstruction and meshing of points.</p>",
     "link": "http://vimeo.com/23434599"
   },
   "lockless_queue": {
