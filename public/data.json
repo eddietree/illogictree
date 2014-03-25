@@ -39,6 +39,7 @@
   },
   "navier": {
   	"category":"Project",
+  	"highlight":1,
     "date": "2010-7-14",
     "title": "Navier-Stokes Particle System",
     "desc": "<p>The Navier-Stokes equations are really quite groovy because they describe the physical properties behind fluid substances, from water and air currents to the motion of stars swirling inside a galaxy. Navier-Stokes is also used as the basis for weather forecasts. If you are interested in this learning more about this physics trickery, Jos Stam gave a great <a href='http://developer.download.nvidia.com/.../2007/gdc/RealTimeFluids.pdf'>GDC talk</a> about it.</p> <p>The particle system application is coded in C++ and uses OpenGL/GLUT to render 40,000 particles. Given the vast amount of particles, I decided to take a multi-threaded approach to fork the work into several threads, with each thread handling a block of particles.</p>",
@@ -125,6 +126,7 @@
   },
   "powersoften": {
   	"category":"Project",
+  	"highlight":1,
     "date": "2012-8-28",
     "title": "The Powers Project",
     "desc": "<p>A Creative Re-Imagining of Charles and Ray Eames’ Powers of Ten.</p><p>Heavily inspired by 2001: A Space Odyssey, this project is a real-time procedurally generated visual for the <a href='http://powersproject.org/'>Powers of Ten</a> re-imagination project. This was a collaboration effort among various other artists and animators around the world.</p> <p>Coded in C++ &amp; OpenGL.</p>",

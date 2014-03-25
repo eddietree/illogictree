@@ -1,15 +1,14 @@
 <?php include 'header.php' ?>
-
-
     <div class="container">
-
 
 <?php
 
+/*
 echo $_SERVER{'DOCUMENT_ROOT'} . '/images/projects/';
 echo "<br/>";
 echo $_SERVER{'HTTP_HOST'};
 //var_dump($_SERVER);
+*/
 
 $file = "http://".$_SERVER{'HTTP_HOST'}."/data.json";
 $string = file_get_contents($file);
@@ -40,6 +39,10 @@ echo "</pre>";
         <!--<h1><?= $this->pageTitle ?></h1>-->
         <p class="lead">Real-time visuals and video games by <a href="#">Eddie Lee</a></p>
 
+        <ul id="categories">
+            <li><a href="/project">Projects</a></li>
+            <li><a href="/game">Games</a></li>
+        </ul>
         <div id="mason-container">
 
             <?php foreach( $projects as $id => $project ) 
@@ -70,12 +73,15 @@ echo "</pre>";
                     <div class="info">
                         <div class="desc"><?= $project->desc;?></div>
 
-                        <?php if ( property_exists($project, 'more_links')) { ?>
+                        <?php if ( property_exists($project, 'more_links')) { 
+                            end($project->more_links);         // move the internal pointer to the end of the array
+                            $last_key = key($project->more_links); 
+                            ?>
                             <p class="more-links">
 
                             <?php foreach( $project->more_links as $link_title => $link_url ) { ?>
                                 <a href="<?= $link_url ?>"><?= $link_title ?></a>
-                                <?php  if ($link_url !== end($project->more_links)) echo "//" ?>
+                                <?php  if ($link_title !== $last_key) echo "//" ?>
                             <?php } ?>
 
                             </p>
@@ -88,7 +94,7 @@ echo "</pre>";
                         <?php }} ?>
 
                         <div class="desc-footer">
-                            <span class="category"><i class="fa fa-tag"></i> <a href="/<?= strtolower($project->category)?>"><?= $project->category?></a></span>
+                            <span class="category"><i class="fa fa-tag"></i> <a href="#<?= strtolower($project->category)?>"><?= $project->category?></a></span>
                             <span class="date"><i class="fa fa-calendar-o"></i> <?= date("M j, o", strtotime($project->date)) ?></span>
                             <div class="clearfix"></div>
                         </div>
