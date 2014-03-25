@@ -15,15 +15,24 @@ $file = "http://".$_SERVER{'HTTP_HOST'}."/data.json";
 $string = file_get_contents($file);
 $results = json_decode($string);
 
-// TODO: sort
-$projects = $results;
+function cmp($a, $b)
+{
+    return (strtotime($a->date) > strtotime($b->date)) ? -1 : 1;
+}
+
+// gather and sort
+$projects = array();
+foreach( $results as $id => $project ) 
+{
+    $projects[$id] = $project;
+}
+uasort($projects, "cmp");
 
 /*
-echo "<code>";
+echo "<pre>";
 var_dump($projects);
-echo "</code>";*/
-
-
+echo "</pre>";
+*/
 
 ?>
 

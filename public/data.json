@@ -1,5 +1,6 @@
 {
   "sigma": {
+  	"highlight": 1,
   	"category":"Project",
     "date": "2013-10-12",
     "title": "SIGMA + Humanelectro",
@@ -73,7 +74,7 @@
 
   "ray_marching": {
   	"category":"Project",
-    "date": "2014-5-3",
+    "date": "2010-9-15",
     "title": "OpenCL Ray-Marching",
     "desc": "<p>This visual uses the ray-marching algorithm upon<a href='http://iquilezles.org/www/articles/distfunctions/distfunctions.htm'> mathematical distance fields</a> to collect pixel color data. My ray-tracing algorithm uses <a href='http://www.khronos.org/opencl'>OpenCL</a> to trace phong lighting, shadows, specular highlights, ambient occlusion and reflection.  Ray-marching is used to decrease the number of steps required in the kernel.</p>",
     "link": "SITE"
@@ -102,7 +103,6 @@
 
   },
   "torii": {
-  	"highlight": 1,
   	"category":"Project",
     "date": "2014-3-1",
     "title": "Torii",
@@ -260,7 +260,7 @@
   },
   "hdr": {
   	"category":"Project",
-    "date": "2014-5-3",
+    "date": "2010-4-7",
     "title": "High Dynamic Range",
     "desc": "<p>High Dynamic Range (HDR) is just a fancy term for “storing color values much greater than the usual 0.0f to 1.0f used in graphics”. Unlike conventional colors used in graphics, where color values are bound to the range [0.0, 1.0], the color values in HDR has a greater range. It uses <strong>tone-mapping</strong> to map high-ranged values to the low-range of the monitor. The advantage of HDR is that your scenes appear more realistic than traditional methods.</p>",
     "more_links": {
