@@ -9,9 +9,9 @@
 echo $_SERVER{'DOCUMENT_ROOT'} . '/images/projects/';
 echo "<br/>";
 echo $_SERVER{'HTTP_HOST'};
-var_dump($_SERVER);
+//var_dump($_SERVER);
 
-$file = "http://localhost/data.json";
+$file = "http://".$_SERVER{'HTTP_HOST'}."/data.json";
 $string = file_get_contents($file);
 $results = json_decode($string);
 
