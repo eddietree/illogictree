@@ -5,7 +5,7 @@
 
 
 <?php
-$file = "http://localhost/public/data.json";
+$file = "http://localhost/data.json";
 $string = file_get_contents($file);
 $results = json_decode($string);
 
@@ -17,12 +17,12 @@ echo "<code>";
 var_dump($projects);
 echo "</code>";*/
 
-//echo $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
+echo $_SERVER{'DOCUMENT_ROOT'} . '/images/projects/';
 
 ?>
 
       <div class="starter">
-        <h1><?= $this->pageTitle ?></h1>
+        <!--<h1><?= $this->pageTitle ?></h1>-->
         <p class="lead">Real-time visuals and video games by <a href="#">Eddie Lee</a></p>
 
         <div id="mason-container">
@@ -30,7 +30,7 @@ echo "</code>";*/
             <?php foreach( $projects as $id => $project ) 
             {
                 $img_id = strtolower($id);
-                $img_dir = $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
+                $img_dir = $_SERVER{'DOCUMENT_ROOT'} . '/images/projects/';
                 $img_path = $img_id . '.png';
 
                 if( !file_exists( $img_dir . $img_path ) )
@@ -44,9 +44,11 @@ echo "</code>";*/
                 }
 
                 $img_full_path = $this->app->getRootPath().'images/projects/' . $img_path;
+
+                $item_class = "cat-" . strtolower($project->category);
             ?>
 
-            <div class="item <?php if( property_exists($project,'highlight') ) echo "w2" ?> ">
+            <div class="item <?=$item_class?><?php if( property_exists($project,'highlight') ) echo " w2" ?>">
                 <div class="project-item">
                     <a href="<?= $project->link ?>"><img class="img-responsive" alt="<?= $project->title ?>" src="<?= $img_full_path ?>"/></a>
                     <h3><?= $project->title;?></h3>
@@ -64,11 +66,17 @@ echo "</code>";*/
                             </p>
                         <?php } ?>
 
-                        <?php if ( property_exists($project, 'btn')) { ?>
-                        <a href="<?= $project->btn->link ?>" class="btn btn-info btn-xs active" role="button"><?= $project->btn->text ?></a>
-                        <?php } ?>
+                        <?php if ( property_exists($project, 'btn')) { 
+                                foreach( $project->btn as $link_title => $link_url ) { 
+                            ?>
+                            <a href="<?= $link_url ?>" class="btn btn-info btn-xs active" role="button"><?= $link_title ?></a>
+                        <?php }} ?>
 
-                        <div class="desc-footer"><span class="date"><?= date("M j, o", strtotime($project->date)) ?></span></div>
+                        <div class="desc-footer">
+                            <span class="category"><i class="fa fa-tag"></i> <a href="/<?= strtolower($project->category)?>"><?= $project->category?></a></span>
+                            <span class="date"><i class="fa fa-calendar-o"></i> <?= date("M j, o", strtotime($project->date)) ?></span>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
                 
                 </div>

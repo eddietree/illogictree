@@ -7,11 +7,12 @@
     <title><?= $this->htmlEncode($this->app->getConfig('siteName')) . ' - ' . $this->pageTitle ?></title>
 
     <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono|Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
-    
+
     <!-- Bootstrap -->
 	 <link rel="stylesheet" href="<?= $this->app->getRootPath() ?>extlib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $this->app->getRootPath() ?>extlib/bootstrap/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="<?= $this->app->getRootPath() ?>css/layout.css">
+    <link rel="stylesheet" href="<?= $this->app->getRootPath() ?>extlib/fontawesome/css/font-awesome.min.css">
 
   </head>
   <body>
