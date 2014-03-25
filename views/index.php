@@ -17,6 +17,11 @@ echo "<code>";
 var_dump($projects);
 echo "</code>";*/
 
+$timestamp = strtotime("2014-5-3");
+echo date("M j, o", $timestamp);
+
+echo $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
+
 ?>
 
       <div class="starter">
@@ -25,16 +30,33 @@ echo "</code>";*/
 
         <div id="mason-container">
 
-            <?php foreach( $projects as $id => $project ) {?>
+            <?php foreach( $projects as $id => $project ) 
+            {
+                $img_id = strtolower($id);
+                $img_dir = $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
+                $img_path = $img_id . '.png';
+
+                if( !file_exists( $img_dir . $img_path ) )
+                {
+                    $img_path = $img_id . '.jpg';
+
+                    if( !file_exists( $img_dir . $img_path ) )
+                    {
+                        $img_path = "notfound.png";
+                    }
+                }
+
+                $img_full_path = $this->app->getRootPath().'images/projects/' . $img_path;
+            ?>
 
             <div class="item <?php if( property_exists($project,'highlight') ) echo "w2" ?> ">
                 <div class="project-item">
-                    <!--<img class="img-responsive" src ="<?= $this->app->getRootPath().'images/projects/'.$id.'.png' ?>"/>-->
-                    <a href="#"><img class="img-responsive" src ="<?= $this->app->getRootPath().'images/projects/sigma.png' ?>"/></a>
+                    <a href="#"><img class="img-responsive" src ="<?= $img_full_path ?>"/></a>
+                    <!--<a href="#"><img class="img-responsive" src ="<?= $this->app->getRootPath().'images/projects/sigma.png' ?>"/></a>-->
                     <div class="info">
                         <h3><?= $project->title;?></h3>
                         <div class="desc"><?= $project->desc;?></div>
-                        <div class="desc-footer"><span class="date">March 3, 2014</span></div>
+                        <div class="desc-footer"><span class="date"><?= date("M j, o", strtotime($project->date)) ?></span></div>
                     </div>
                 
                 </div>

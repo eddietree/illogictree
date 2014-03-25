@@ -1,6 +1,6 @@
 {
   "sigma": {
-    "date": "2011-07-14 19:43:37 +0100",
+    "date": "2013-10-12",
     "title": "SIGMA + Humanelectro",
     "desc": "Futuristic robotic magical-mystery live performance featuring the Japanese beat-boxer Ryo Fujimoto. Project includes custom-build MIDI glove, Leap Motion, OSC and PureData.",
     "links": {
@@ -9,203 +9,253 @@
   },
   "grass": {
   	"highlight": 1,
+    "date": "2010-12-8",
     "title": "Master’s Thesis: Real-Time Grass",
     "desc": "<p>Grass is the most prevalent form of vegetation on the Earth’s surface. Thus, it is an essential element in rendering realistic outdoor scenes. But due to the geometric complexity of grass, rendering it realistically in real-time can be difficult and computationally expensive. Furthermore, to produce life-like representations of grass requires faithful physical simulations of movement provided by wind currents. My <strong>master’s thesis</strong> is all about discovering and implementing real-time grass.</p>"
   },
   "artifacts": {
+    "date": "2013-2-11",
     "title": "Artifacts",
     "desc": "<p>Won <a href='https://twitter.com/eddietree/status/300566329646260224'>1st Place</a> at <a href='http://tokyo-demo-fest.jpn.org/2013/?lang=en'>Tokyo Demo Scene 2013</a></p> <p>Artifacts is my entry to the <a href='http://tokyo-demo-fest.jpn.org/2013/?lang=en'>Toyko Demo Fest</a> competition held in Feb 2013. PC Demo Category. Real-time procedurally generated graphics featuring alien structures, fluid dynamics and particles! Coded in C++/OpenGL/OpenCL. Collaboration with <a href='http://sonarise.com/'>Sonarise Production</a>.</p>"
   },
   "navier": {
+    "date": "2010-7-14",
     "title": "Navier-Stokes Particle System",
     "desc": "<p>The Navier-Stokes equations are really quite groovy because they describe the physical properties behind fluid substances, from water and air currents to the motion of stars swirling inside a galaxy. Navier-Stokes is also used as the basis for weather forecasts. If you are interested in this learning more about this physics trickery, Jos Stam gave a great <a href='http://developer.download.nvidia.com/.../2007/gdc/RealTimeFluids.pdf'>GDC talk</a> about it.</p> <p>The particle system application is coded in C++ and uses OpenGL/GLUT to render 40,000 particles. Given the vast amount of particles, I decided to take a multi-threaded approach to fork the work into several threads, with each thread handling a block of particles.</p>"
   },
-  "Water": {
+  "water": {
+    "date": "2011-9-26",
     "title": "Water &amp; Procedural Terrain",
     "desc": "<p>Real-time simulation of water and procedurally generated terrain. Coded in my own personal C++/OpenGL 3d engine. This visual features terrain which is produced by 2D-Perlin; its ambient occlusion is pre-calculated per vertex by analyzing surface normals. Shader effects include: Gooch shading, ambient occlusion, fog, reflections, refractions, fresnel, and phong lighting.</p>"
   },
   "OpenCL": {
+    "date": "2014-5-3",
     "title": "OpenCL Ray-Marching",
     "desc": "<p>This visual uses the ray-marching algorithm upon<a href='http://iquilezles.org/www/articles/distfunctions/distfunctions.htm'> mathematical distance fields</a> to collect pixel color data. My ray-tracing algorithm uses <a href='http://www.khronos.org/opencl'>OpenCL</a> to trace phong lighting, shadows, specular highlights, ambient occlusion and reflection.  Ray-marching is used to decrease the number of steps required in the kernel.</p>"
   },
-  "Fast": {
+  "fft": {
+    "date": "2014-5-3",
     "title": "Fast Fourier Transform",
     "desc": "<p>Real-time animated Fast Fourier Transform based on <a href='http://graphics.ucsd.edu/courses/rendering/2005/jdewall/tessendorf.pdf'>Tessendorf’s paper</a>. It uses statistical models which decompose the wave height field as a sum of sinusoidal waves. This technique is great for rendering real-time water, but my implementation uses a Fresnel-based lighting model to achieve the nice red-silky texture.</p> <p>Coded in C++/OpenGL.</p>"
   },
-  "Robotica": {
+  "robotica": {
+    "date": "2014-5-3",
     "title": "Robotica – Generative Beats",
     "desc": "<p>Robotica is project that is a result of my study on procedurally generated drum patterns. Uses <a href='http://www.hisschemoller.com/2011/euclidean-rhythms/'>Euclidean rhythms</a>. </p> <p>Highly inspired by African drum patterns. Coded in C++/OpenGL/GameMonkey.</p>"
   },
   "Torii": {
   	"highlight": 1,
+    "date": "2014-5-3",
     "title": "Torii",
     "desc": "<p>Small project involving a <a href='http://www.amazon.com/Brookstone-HDMI-Pocket-Projector/dp/B008D6JDS8'>tiny projector</a>, Ableton Live 9, MIDI-to-OSC, and real-time visuals!</p> <p>Coded in C++, OSC, Gamemonkey &amp; OpenGL.</p>"
   },
-  "Erowid": {
+  "erowid": {
+    "date": "2014-5-3",
     "title": "Erowid",
     "desc": "<p>Another small project involving a <a href='http://www.amazon.com/Brookstone-HDMI-Pocket-Projector/dp/B008D6JDS8'>tiny projector</a>, Ableton Live 9, MIDI-to-OSC, and real-time visuals!</p> <p>Coded in C++, OSC, Gamemonkey &amp; OpenGL.</p>"
   },
-  "Powers": {
+  "powersoften": {
+    "date": "2014-5-3",
     "title": "Powers of Ten",
     "desc": "<p>Heavily inspired by 2001: A Space Odyssey, this project is a real-time procedurally generated visual for the <a href='http://powersproject.org/'>Powers of Ten</a> re-imagination project. This was a collaboration effort among various other artists and animators around the world.</p> <p>Coded in C++ &amp; OpenGL.</p>"
   },
-  "Black": {
+  "blackstar": {
+    "date": "2014-5-3",
     "title": "Black Star",
     "desc": "<p>This piece draws inspiration from two concepts: the black hole and the neutron star. Its gravity absorbs nearby matter, causing the system to be perturbed from its dynamical equilibrium.  The particle effects uses a modified <a href='http://www.red3d.com/cwr/boids/'>boids algorithm</a> and the light rays are rendered by sampling a 2D Perlin noise function.  Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p> <p>This piece was being shown at the <a href='http://www.flickr.com/photos/sfac/sets/72157626369768790/'>TRANSMUTATION</a> exhibit at <a href='http://gaffta.org/'>GAFTA</a>, located in San Francisco.</p>"
   },
-  "Digital": {
+  "digitalstar": {
+    "date": "2014-5-3",
     "title": "Digital Star",
     "desc": "<p>This piece is a stylized abstraction of a star undergoing nuclear fusion. Fusion reactions power the stars and produces all natural elements in the world, including the elements that make up the human body.  Real-time simulation that uses 3D cellular automata to generate the boxes. The circles on the bottom right represent the current time in binary. Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p> <p>This piece was being shown at the <a href='http://www.flickr.com/photos/sfac/sets/72157626369768790/'>TRANSMUTATION</a> exhibit at <a href='http://gaffta.org/'>GAFTA</a>, located in San Francisco.</p>"
   },
-  "Magenta": {
+  "magenta": {
+    "date": "2014-5-3",
     "title": "Magenta Beat",
     "desc": "<p>The beat shatters the sphere and ripples the vertices in hues of magenta and cyan. Fragments on screen become audio-reactive and dance to the music of <a href='http://www.rei-harakami.com/'>Rei Harakami</a>. This visualizer was developed in my own personal 3d engine. It is coded in C++ and uses OpenGL and <a href='http://www.fmod.org/'>fmod</a>.</p>"
   },
-  "Funky": {
+  "funkyflowers": {
+    "date": "2014-5-3",
     "title": "Funky Flowers",
     "desc": "<p>The funkiest flower species discovered by intergalactic scientists! Uses <a href='http://en.wikipedia.org/wiki/Fast_Fourier_transform'>Fast Fourier Transform</a> for beat detection. Each tentacle is controlled by Verlet integration using constraints. This real-time audio-reactive simulation coded in C++ using Cinder library.</p>"
   },
-  "Isometric": {
+  "isometric": {
+    "date": "2014-5-3",
     "title": "Isometric Frequency",
     "desc": "<p>Real-time audioreactive visualizer coded in my personal engine which uses C++ with OpenGL and Fmod libs. I applied some <a href='http://en.wikipedia.org/wiki/Greeble'>Greeble</a> tech to render the shattered aesthetic and applied simple vertex shading for the spread effect and post-processing for the glitchy aesthetic.</p> <p>Music by Otograph.</p>"
   },
-  "The": {
+  "astronaut": {
+    "date": "2014-5-3",
     "title": "The Astronaut",
     "desc": "<p>I wanted to experiment with the hand-drawn aesthetic rendered in real-time. I modeled this by offsetting lines and curves based on a Perlin to achieve that natural look. (12/2/2012)</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis.</p>"
   },
-  "Pixel": {
+  "pixel_sun": {
+    "date": "2014-5-3",
     "title": "Pixel Sun",
     "desc": "<p>I wanted to capture the beauty of a sunrise within the aesthetic of pixel art. This audio-reactive visualizer was coded in my personal engine (C++) and uses <a href='http://fmod.org/'>fmod</a> for FFT analysis. It features 3D perlin noise for the rendering of the pixelated clouds and of the water. The music is by <a href='http://freemusicarchive.org/music/Broke_For_Free/'>Broke for Free</a>.</p>"
   },
-  "Voronoi": {
+  "voronoi": {
+    "date": "2014-5-3",
     "title": "Voronoi &amp; Llyod’s Algorithm",
     "desc": "<p>My Voronoi decomposition partitions a plane with n-points into convex polygons using Fortune’s algorithm.  This was my tech study while coding the Voronoi <a href='http://pixeljunk.jp/library/4am/'>PixelJunk 4am</a> visualizer.</p> <p>Llyod’s algorithm uses the Voronoi diagram to repulse each centroid away from each other.</p>"
   },
-  "Cloth": {
+  "cloth_verlet": {
+    "date": "2014-5-3",
     "title": "Cloth Simulation (Verlet Integration)",
     "desc": "<p>Cloth simulated through classical Verlet Integration as explained in this <a href='http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm'>paper</a>. In this simulation, the cloth is being represented by vertices that are connected by line segments. Every line is a constraint and every vertex is a point mass (an object with no dimension, just location and mass). Gravity and other forces are applied to the system while the constraints keep the system intact. Each vertex is updated every frame in accordance to Verlet. This video shows cloth as well as other Verlet simulations.</p>"
   },
-  "Terrain": {
+  "terrain_lod": {
+    "date": "2014-5-3",
     "title": "Terrain (Dynamic LOD)",
     "desc": "<p>I implemented a patch based level-of-detail scheme that renders terrain dynamically. It uses a stitching algorithm to blend the different LOD patches together to avoid discontinuity and gaps in the surface mesh.&nbsp;Furthermore, I implemented frustum culling with a quad tree to eliminate unneeded rendering when the geometry is unable to be seen.</p>"
   },
-  "High": {
+  "hdr": {
+    "date": "2014-5-3",
     "title": "High Dynamic Range",
     "desc": "<p>High Dynamic Range (HDR) is just a fancy term for “storing color values much greater than the usual 0.0f to 1.0f used in graphics”. Unlike conventional colors used in graphics, where color values are bound to the range [0.0, 1.0], the color values in HDR has a greater range. It uses <strong>tone-mapping</strong> to map high-ranged values to the low-range of the monitor. The advantage of HDR is that your scenes appear more realistic than traditional methods.</p>"
   },
   "Lichtenstein": {
+    "date": "2014-5-3",
     "title": "Lichtenstein Shader",
     "desc": "<p>I wanted to reproduce the aesthetic that was popularized by <a href='http://en.wikipedia.org/wiki/Roy_Lichtenstein'>Roy Lichtenstein</a> in the 1960s. However, I wanted to do it procedurally in real-time using actual 3D models. The shader processes the frame buffer and applies hatching by staggering the pixel’s luminosity. The hatching is done procedurally in the pixel shader and requires no texture lookups. For the edges, a simple <a href='http://www.roborealm.com/help/Sobel.php'>sobel filter</a> kernel was used to detect the edges.</p>"
   },
   "Animation": {
+    "date": "2014-5-3",
     "title": "Animation &amp; Skinning",
     "desc": "<p><strong>Skinning</strong> is a popular method of performing real-time deformation of polygon meshes by way of associated bones/joints of an articulated skeleton. Skinning displaces vertices by weights given by the skeletal bone structure. The vertices are displaced in the vertex shader by binding to certain animation matrices.</p>"
   },
   "3DS": {
+    "date": "2014-5-3",
     "title": "3DS-Max Exporter",
     "desc": "<p>I’ve implemented my own custom <strong>plugin</strong> for 3ds-Max that exports meshes and animations to my own custom format. My engine reads in my custom format and displays the meshes in real-time. This video shows the result as well as displaying  my exploration into <strong>Gooch shading</strong> to achieve the golden hue. The model also uses simple phong lighting and specular highlights to achieve that glossy look.</p>"
   },
   "Custom": {
+    "date": "2014-5-3",
     "title": "Custom Scripting Language",
     "desc": "<p>I’ve coded my own custom scripting language (called Edbonics) and a virtual machine to run the script. My scripting language is first lexically analyzed for tokens and then parsed into a graph. The parsed graph is fed into the code generator in order to convert the script into byte-code. The <strong>virtual machine</strong>, which is tightly integrated into my 3D engine, then runs the byte-code.</p>"
   },
-  "Dynamic": {
+  "shadow_mapping": {
+    "date": "2014-5-3",
     "title": "Dynamic Shadow Mapping",
     "desc": "<p>Dynamic shadow mapping implemented in C++ and DirectX10. Basically what the algorithm does is it renders the depth of the entire scene onto a render target from the perspective of the light. Then, it renders the scene again from the initial camera position. In the pixel shader, I compared the depths of each pixel to the first render target to determine if that pixel should be occluded by a shadow.</p>"
   },
-  "Screen": {
+  "ssao": {
+    "date": "2014-5-3",
     "title": "Screen Space Ambient Occlusion",
     "desc": "<p>Screen Space Ambient Occlusion (SSAO) is a rendering technique for efficiently approximating the ambient occlusion effect in real-time. The algorithm is executed purely on the computer’s GPU and implemented in the pixel shader, in which it analyzes the scene depth buffer which is stored in a texture. For every pixel on the screen, the pixel shader samples the depth values around the current pixel and tries to compute the amount of ambient occlusion from each of the sampled points.</p>"
   },
   "Network": {
+    "date": "2014-5-3",
     "title": "Network Space Shooter (UDP)",
     "desc": "<p>Using the <a href='http://en.wikipedia.org/wiki/User_Datagram_Protocol'>UDP protocol</a>, I coded a small mini-game in C++ which involves a simple 2D space shooter.  Using the <a href='http://code.google.com/p/libmnet/'>mnet library</a>, a thin wrapper around <a href='http://www.boost.org/'>Boost’s ASIO</a> libraries, I developed a client-server model in which mulitple clients can log on to one server and play in the same arena. Have fun!</p>"
   },
-  "Procedurally": {
+  "perlin_music": {
+    "date": "2014-5-3",
     "title": "Procedurally Generated Music",
     "desc": "<p>Have you ever wondered what Perlin noise sounds like in musical form? Well, this app featured procedurally generated music that uses Perlin to conduct the harmony. The system iterates through a standard I-IV-V chord progression on the C-major scale and procedurally chooses the notes to be played.</p>"
   },
-  "Zen": {
+  "zen_galaxy": {
+    "date": "2014-5-3",
     "title": "Zen Galaxy (Ribbon Boids)",
     "desc": "<p>Uses Craig Reynoid’s flocking algorithm (<a href='http://en.wikipedia.org/wiki/Boids'>Boids</a>) mixed in with some 3D Perlin Noise to generate the semi-random behavoir. The camera follows the boid cluster via a mass-spring damper physics system in order keep the camera movement smooth. Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p>"
   },
-  "Colors": {
+  "ribbons": {
+    "date": "2014-5-3",
     "title": "Colors &amp; Movement",
     "desc": "<p>This piece was heavily inspired by the movement and opacity of the ribbons from the Chinese ribbon dance. The movement of the lines are controlled by Perlin noise, which is one of the most delicious algorithms for natural movement. </p> <p>I began coding a new rendering engine from scratch (C++/OpenGL) and decided to use this visualizer as a proof-of-tech that the engine can actually render stuff on screen.  </p>"
   },
-  "Space": {
+  "space_synth": {
+    "date": "2014-5-3",
     "title": "Space Synth",
     "desc": "<p>Arpeggiator simulator coded in HTML5 and Javascript, uses the <a href='https://github.com/oampo/Audiolet'>audiolet</a> library. I do believe that synthesizers in space is the most badass concept known to mankind, so I had to pay tribute. </p> <p>It generates arpeggio (melody) pattern based on whatever chord you hold down, which includes the classic up, down, converge and diverge, as well as some custom arps that I’ve designed. (11/27/2012)</p>"
   },
-  "Father’s": {
+  "monocle": {
+    "date": "2014-5-3",
     "title": "Father’s Monocle",
     "desc": "<p>A real-time flocking algorithm which was exhibited at the <a href='http://www.dca.org.uk/'>Dundee Contemporary Arts</a> centre in Scotland.</p> <p>This was a collaboration effort with German artist <a href='http://www.torstenlauschmann.com/'>Torsten Lauschmann</a> for his <a href='http://www.dca.org.uk/whats-on/exhibitions/startle-reaction.html'>Startled Reactions</a> exhibition series (October 2011).</p>"
   },
-  "Phonograph": {
+  "phonograph": {
+    "date": "2014-5-3",
     "title": "Phonograph",
     "desc": "<p>Another HTML5/Javascript/Canvas music visualiser. Pulls data from SoundCloud and does FFT analysis.</p>"
   },
-  "Obsidian": {
+  "obsidian": {
+    "date": "2014-5-3",
     "title": "Obsidian",
     "desc": "<p>If you stare long enough at this, it will reprogram your mind. </p> <p>Coded in HTML5 Canvas and Javascript.  (11/26/2012)</p>"
   },
-  "Joy": {
+  "joy_divisor": {
+    "date": "2014-5-3",
     "title": "Joy Divisor",
     "desc": "<p>Every time I see the classic album cover for Joy Division’s <a href='http://en.wikipedia.org/wiki/Unknown_Pleasures'>Unknown Pleasures</a>, I always cannot help but wonder what the visual will look like moving in-real time.  So I did it!</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis. (11/29/2012)</p>"
   },
-  "Aquatic": {
+  "aquatic_pixels": {
+    "date": "2014-5-3",
     "title": "Aquatic Pixels (Android App)",
     "desc": "<p>Aquatic Pixels is an Android app that depicts an aquarium in pixel art. It is currently available on the <a href='http://www.appbrain.com/app/aquatic-pixels/org.illogictree.com'>Android Marketplace</a> if you search by its name. The art was borrowed from my other game, <a href='http://illogictree.com/games/between/'>Between the Devil and the Deep Blue Sea</a>, and ported into this underwater screen-saver environment. Requires Android 2.2 or above.</p>"
   },
   "Mini": {
+    "date": "2014-5-3",
     "title": "Mini WebGL Experiments",
     "desc": "<p>This is just me trying out various small WebGL experiments. WebGL is quite neat and it is great to <em>finally</em> have proper graphics hardware support on web surfaces. However, I have decided not to dive too deep in to WebGL because the lack of operator-overload support in Javascript deeply disturbed me.</p>"
   },
-  "Organic": {
+  "organic_splines": {
+    "date": "2014-5-3",
     "title": "Organic Spline Particles",
     "desc": "<p>Using <a href='http://openframeworks.cc/'>OpenFrameworks</a>, I coded this wiggly little particle system that renders organic-looking tentacles in real-time. I was heavily inspired from the movement of <a href='http://en.wikipedia.org/wiki/Tube-dwelling_anemone'>underwater anemones</a> and decided to try to imitate its behavior.</p> <p>With 2D <a href='http://en.wikipedia.org/wiki/Cubic_Hermite_spline'>Hermite splines</a>, I was able to render the curves in color-shaded line segments. The tangents and positions are warped slightly every frame using sinusoidal waves to give that life-like wiggly behavior.</p>"
   },
-  "Fish": {
+  "fish_flock": {
+    "date": "2014-5-3",
     "title": "Fish Group Behavior – AI",
     "desc": "<p>Based on the algorithm developed by <a href='http://www.red3d.com/cwr/boids/'>Craig Reynolds</a>, “Boids” is an artificial life program which endeavors to simulate the flocking behavior of birds. The movement of each entity is governed by three simple rules: separation, alignment and cohesion. The result is this group behavior that appears natural and “emergent”. Coded in C++ using <a href='http://openframeworks.cc/'>OpenFrameworks</a>.</p>"
   },
-  "Conway’s": {
+  "conway_3d": {
+    "date": "2014-5-3",
     "title": "Conway’s Game of Life 3D",
     "desc": "<p>In an effort to bring the classical Conway’s Game of Life in to the 3D realm, I coded this sample 3D application in C++ using <a href='http://libcinder.org/'>Cinder</a>. </p> <p>Basically, what’s going on is you apply the traditional cellular automata rules in 3D space. That is, instead of checking the surrounding 8 neighbors like you do in 2D space, you check the 26 neighbors in 3D space. </p>"
   },
-  "Circuit": {
+  "circuit_board": {
+    "date": "2014-5-3",
     "title": "Circuit Board Generator",
     "desc": "<p>The circuit boards are procedurally generated by randomly placing nodes and processors on the circuit board and then using <a href='http://en.wikipedia.org/wiki/A*_search_algorithm'>A-Star search algorithm</a> to connect the nodes. Using A-star prevents any wires from overlapping and causes the visual to have that flowing aesthetic.</p>"
   },
-  "Fractal": {
+  "fractal_trees": {
+    "date": "2014-5-3",
     "title": "Fractal Trees",
     "desc": "<p>I used fractals to generate randomized trees. Starting from the trunk of the tree, it’s children nodes can be procedurally generated by applying certain conditions during the the formation of budding branches. Coded in Processing. </p>"
   },
-  "Delaunay": {
+  "delaunay": {
+    "date": "2014-5-3",
     "title": "Delaunay Triangulation",
     "desc": "<p><a href='http://en.wikipedia.org/wiki/Delaunay_triangulation'>Delaunary triangulation</a> takes a set of points and builds a triangulation such that satisfies the “empty circle” property. That is, for each triangle, we can circumscribe a circle such that no other points in the set can exist in the circle. The output of the triangulated graph produces the nearest neighbor graph of a given points. It has practical uses in geometry reconstruction and meshing of points.</p>"
   },
   "Lockless": {
+    "date": "2014-5-3",
     "title": "Lockless Queue",
     "desc": "<p>A lockless queue is a thread-safe queue that allows the user to push and pop elements from from different threads without any locking mechanisms. These containers are the most essential means of concurrent computation, since they allow threads to be decoupled somewhat while staying synchronized.</p>"
   },
-  "Eddie": {
+  "video_convertor": {
+    "date": "2014-5-3",
     "title": "Eddie’s Intergalactic Video Converter",
     "desc": "<p> I made a small app that handles exporting videos to SD and HD compression schemes for <a href='http://youtube.com/'>YouTube</a> or <a href='http://vimeo.com/'>Vimeo</a>. I designed the app to be simple to use and minimalistic in it’s interface. It simply loads the source video file and exports it out with the settings you choose. With <a href='http://ffmpeg.org/'>ffmpeg</a> at its core, it uses <a href='http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC'>h.264</a> to compress the video and <a href='http://en.wikipedia.org/wiki/Advanced_Audio_Coding'>AAC</a> to compress the audio.</p>"
   },
   "BSP": {
+    "date": "2014-5-3",
     "title": "BSP",
     "desc": "<p>One of my first projects when switching over from 2D to 3D-land was to render one of the <a href='http://en.wikipedia.org/wiki/Binary_space_partitioning'>BSP</a> levels from Quake III. BSP trees divide a region of space into two subregions at each node; thus, the BSP tree can be traversed in O(log-n) from an arbitrary viewpoint. It uses frustum culling and PVS (potential visible sets) to cull out geometry that is not viewable to the user. It also has ray-tracing and collision detection, which is also an O(log-n) operation.</p>"
   },
   "Particle": {
+    "date": "2014-5-3",
     "title": "Particle System",
     "desc": "<p>Implemented in C++ and OpenGL, this simulation features several particle system simulations, including fireworks, smoke effect, debris and water fountain. It uses simple Euler integration to handle the physical updating of each particle. Each simulation is a result of applying different forces to the particles each update.</p>"
   },
   "Statistical": {
+    "date": "2014-5-3",
     "title": "Statistical Filtering of Global Illumination",
     "desc": "<p>During my research at IPAM (Institute of Pure and Applied Mathemetics) at UCLA, my research team published a paper prepared for <strong>Pixar</strong> in which my team developed algorithms to handle statistical denoising for global illumination.</p>"
   },
   "2D": {
+    "date": "2014-5-3",
     "title": "2D Level Editor",
     "desc": "<p>My first C++ project involved coding my own 2D level editor. It uses <a href='http://www.libsdl.org/'>SDL</a> for cross-platform portability. The editor manages various visual layers and tilesheets for the visual layout of the scene. It also handles the scene’s meta-data (such as non-walkable areas, teleports, etc) as well as sprite entities (NPCs, interactable objects) and sounds. It imports and exports the level data into a custom format.</p>"
   }
