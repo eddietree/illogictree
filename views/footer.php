@@ -3,12 +3,15 @@
     <script src="<?= $this->app->getRootPath() ?>extlib/bootstrap/js/bootstrap.min.js"></script>
 
     <script>
-    var container = document.querySelector('#mason-container');
+
+    $(window).load(function(){
+    	var container = document.querySelector('#mason-container');
 		var msnry = new Masonry( container, {
-		  // options
-		 
 		  itemSelector: '.item'
 		});
+    })
+
+    
     </script>
   </body>
 </html>

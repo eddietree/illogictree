@@ -28,7 +28,7 @@
     "title": "Water &amp; Procedural Terrain",
     "desc": "<p>Real-time simulation of water and procedurally generated terrain. Coded in my own personal C++/OpenGL 3d engine. This visual features terrain which is produced by 2D-Perlin; its ambient occlusion is pre-calculated per vertex by analyzing surface normals. Shader effects include: Gooch shading, ambient occlusion, fog, reflections, refractions, fresnel, and phong lighting.</p>"
   },
-  "OpenCL": {
+  "ray_marching": {
     "date": "2014-5-3",
     "title": "OpenCL Ray-Marching",
     "desc": "<p>This visual uses the ray-marching algorithm upon<a href='http://iquilezles.org/www/articles/distfunctions/distfunctions.htm'> mathematical distance fields</a> to collect pixel color data. My ray-tracing algorithm uses <a href='http://www.khronos.org/opencl'>OpenCL</a> to trace phong lighting, shadows, specular highlights, ambient occlusion and reflection.  Ray-marching is used to decrease the number of steps required in the kernel.</p>"
@@ -119,17 +119,17 @@
     "title": "Lichtenstein Shader",
     "desc": "<p>I wanted to reproduce the aesthetic that was popularized by <a href='http://en.wikipedia.org/wiki/Roy_Lichtenstein'>Roy Lichtenstein</a> in the 1960s. However, I wanted to do it procedurally in real-time using actual 3D models. The shader processes the frame buffer and applies hatching by staggering the pixel’s luminosity. The hatching is done procedurally in the pixel shader and requires no texture lookups. For the edges, a simple <a href='http://www.roborealm.com/help/Sobel.php'>sobel filter</a> kernel was used to detect the edges.</p>"
   },
-  "Animation": {
+  "3ds_animation": {
     "date": "2014-5-3",
     "title": "Animation &amp; Skinning",
     "desc": "<p><strong>Skinning</strong> is a popular method of performing real-time deformation of polygon meshes by way of associated bones/joints of an articulated skeleton. Skinning displaces vertices by weights given by the skeletal bone structure. The vertices are displaced in the vertex shader by binding to certain animation matrices.</p>"
   },
-  "3DS": {
+  "3ds": {
     "date": "2014-5-3",
     "title": "3DS-Max Exporter",
     "desc": "<p>I’ve implemented my own custom <strong>plugin</strong> for 3ds-Max that exports meshes and animations to my own custom format. My engine reads in my custom format and displays the meshes in real-time. This video shows the result as well as displaying  my exploration into <strong>Gooch shading</strong> to achieve the golden hue. The model also uses simple phong lighting and specular highlights to achieve that glossy look.</p>"
   },
-  "Custom": {
+  "edbonics": {
     "date": "2014-5-3",
     "title": "Custom Scripting Language",
     "desc": "<p>I’ve coded my own custom scripting language (called Edbonics) and a virtual machine to run the script. My scripting language is first lexically analyzed for tokens and then parsed into a graph. The parsed graph is fed into the code generator in order to convert the script into byte-code. The <strong>virtual machine</strong>, which is tightly integrated into my 3D engine, then runs the byte-code.</p>"
@@ -144,7 +144,7 @@
     "title": "Screen Space Ambient Occlusion",
     "desc": "<p>Screen Space Ambient Occlusion (SSAO) is a rendering technique for efficiently approximating the ambient occlusion effect in real-time. The algorithm is executed purely on the computer’s GPU and implemented in the pixel shader, in which it analyzes the scene depth buffer which is stored in a texture. For every pixel on the screen, the pixel shader samples the depth values around the current pixel and tries to compute the amount of ambient occlusion from each of the sampled points.</p>"
   },
-  "Network": {
+  "udp": {
     "date": "2014-5-3",
     "title": "Network Space Shooter (UDP)",
     "desc": "<p>Using the <a href='http://en.wikipedia.org/wiki/User_Datagram_Protocol'>UDP protocol</a>, I coded a small mini-game in C++ which involves a simple 2D space shooter.  Using the <a href='http://code.google.com/p/libmnet/'>mnet library</a>, a thin wrapper around <a href='http://www.boost.org/'>Boost’s ASIO</a> libraries, I developed a client-server model in which mulitple clients can log on to one server and play in the same arena. Have fun!</p>"
@@ -194,7 +194,7 @@
     "title": "Aquatic Pixels (Android App)",
     "desc": "<p>Aquatic Pixels is an Android app that depicts an aquarium in pixel art. It is currently available on the <a href='http://www.appbrain.com/app/aquatic-pixels/org.illogictree.com'>Android Marketplace</a> if you search by its name. The art was borrowed from my other game, <a href='http://illogictree.com/games/between/'>Between the Devil and the Deep Blue Sea</a>, and ported into this underwater screen-saver environment. Requires Android 2.2 or above.</p>"
   },
-  "Mini": {
+  "magical_mystery": {
     "date": "2014-5-3",
     "title": "Mini WebGL Experiments",
     "desc": "<p>This is just me trying out various small WebGL experiments. WebGL is quite neat and it is great to <em>finally</em> have proper graphics hardware support on web surfaces. However, I have decided not to dive too deep in to WebGL because the lack of operator-overload support in Javascript deeply disturbed me.</p>"
@@ -254,7 +254,7 @@
     "title": "Statistical Filtering of Global Illumination",
     "desc": "<p>During my research at IPAM (Institute of Pure and Applied Mathemetics) at UCLA, my research team published a paper prepared for <strong>Pixar</strong> in which my team developed algorithms to handle statistical denoising for global illumination.</p>"
   },
-  "2D": {
+  "2d_editor": {
     "date": "2014-5-3",
     "title": "2D Level Editor",
     "desc": "<p>My first C++ project involved coding my own 2D level editor. It uses <a href='http://www.libsdl.org/'>SDL</a> for cross-platform portability. The editor manages various visual layers and tilesheets for the visual layout of the scene. It also handles the scene’s meta-data (such as non-walkable areas, teleports, etc) as well as sprite entities (NPCs, interactable objects) and sounds. It imports and exports the level data into a custom format.</p>"
