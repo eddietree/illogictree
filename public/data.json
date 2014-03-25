@@ -132,34 +132,59 @@
     "link": "http://vimeo.com/20192820",
     "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/BlackStar.zip"}
   },
+
+
+
+
+
+
+
   "digitalstar": {
     "date": "2011-2-23",
     "title": "Digital Star",
     "desc": "<p>This piece is a stylized abstraction of a star undergoing nuclear fusion. Fusion reactions power the stars and produces all natural elements in the world, including the elements that make up the human body.  Real-time simulation that uses 3D cellular automata to generate the boxes. The circles on the bottom right represent the current time in binary. Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p> <p>This piece was being shown at the <a href='http://www.flickr.com/photos/sfac/sets/72157626369768790/'>TRANSMUTATION</a> exhibit at <a href='http://gaffta.org/'>GAFTA</a>, located in San Francisco.</p>",
-    "link": "http://vimeo.com/28236033"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/28236033"
+    },
+    "link": "http://vimeo.com/28236033",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/DigitalStar.zip"}
   },
   "magenta": {
     "date": "2011-8-27",
     "title": "Magenta Beat",
     "desc": "<p>The beat shatters the sphere and ripples the vertices in hues of magenta and cyan. Fragments on screen become audio-reactive and dance to the music of <a href='http://www.rei-harakami.com/'>Rei Harakami</a>. This visualizer was developed in my own personal 3d engine. It is coded in C++ and uses OpenGL and <a href='http://www.fmod.org/'>fmod</a>.</p>",
-    "link": "http://vimeo.com/28236033"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/28236033"
+    },
+    "link": "http://vimeo.com/28236033",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/MagentaBeat.zip"}
   },
   "funkyflowers": {
     "date": "2011-3-9",
     "title": "Funky Flowers",
     "desc": "<p>The funkiest flower species discovered by intergalactic scientists! Uses <a href='http://en.wikipedia.org/wiki/Fast_Fourier_transform'>Fast Fourier Transform</a> for beat detection. Each tentacle is controlled by Verlet integration using constraints. This real-time audio-reactive simulation coded in C++ using Cinder library.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/20845572"
+    },
     "link": "http://vimeo.com/20845572"
   },
   "isometric": {
     "date": "2011-10-19",
     "title": "Isometric Frequency",
     "desc": "<p>Real-time audioreactive visualizer coded in my personal engine which uses C++ with OpenGL and Fmod libs. I applied some <a href='http://en.wikipedia.org/wiki/Greeble'>Greeble</a> tech to render the shattered aesthetic and applied simple vertex shading for the spread effect and post-processing for the glitchy aesthetic.</p> <p>Music by Otograph.</p>",
-    "link": "http://vimeo.com/30789118"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/30789118"
+    },
+    "link": "http://vimeo.com/30789118",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/IsoFrequency.zip"}
   },
   "flower_ritual": {
     "date": "2011-10-9",
     "title": "Flower Ritual",
     "desc": "<p>Real-time audioreactive simulation which uses OpenGL for the rendering and Fmod for the sound. The Flower petal’s vertices and normals are procedurally generated every frame using bezier patches. Water reflection is done in the pixel shader using basic fresnel and normal map warping.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/30255064"
+    },
     "link": "http://vimeo.com/30255064"
   },
   "astronaut": {
@@ -167,208 +192,317 @@
     "highlight":1,
     "title": "The Astronaut",
     "desc": "<p>I wanted to experiment with the hand-drawn aesthetic rendered in real-time. I modeled this by offsetting lines and curves based on a Perlin to achieve that natural look. (12/2/2012)</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis.</p>",
-    "link": "http://illogictree.com/app/astronaut/"
+    "link": "http://illogictree.com/app/astronaut/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/app/astronaut/"}
   },
   "pixel_sun": {
     "date": "2011-9-4",
     "title": "Pixel Sun",
     "desc": "<p>I wanted to capture the beauty of a sunrise within the aesthetic of pixel art. This audio-reactive visualizer was coded in my personal engine (C++) and uses <a href='http://fmod.org/'>fmod</a> for FFT analysis. It features 3D perlin noise for the rendering of the pixelated clouds and of the water. The music is by <a href='http://freemusicarchive.org/music/Broke_For_Free/'>Broke for Free</a>.</p>",
-    "link": "http://vimeo.com/28568577"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/28568577"
+    },
+    "link": "http://vimeo.com/28568577",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/PixelSun.zip"}
   },
   "voronoi": {
     "date": "2011-9-6",
     "title": "Voronoi &amp; Llyod’s Algorithm",
     "desc": "<p>My Voronoi decomposition partitions a plane with n-points into convex polygons using Fortune’s algorithm.  This was my tech study while coding the Voronoi <a href='http://pixeljunk.jp/library/4am/'>PixelJunk 4am</a> visualizer.</p> <p>Llyod’s algorithm uses the Voronoi diagram to repulse each centroid away from each other.</p>",
+    "more_links": {
+    	"Vimeo":"https://vimeo.com/28695440",
+    	"Vimeo":"https://vimeo.com/28448030"
+    },
     "link": "https://vimeo.com/28695440"
   },
   "cloth_verlet": {
     "date": "2010-4-7",
     "title": "Cloth Simulation",
     "desc": "<p>Cloth simulated through classical Verlet Integration as explained in this <a href='http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm'>paper</a>. In this simulation, the cloth is being represented by vertices that are connected by line segments. Every line is a constraint and every vertex is a point mass (an object with no dimension, just location and mass). Gravity and other forces are applied to the system while the constraints keep the system intact. Each vertex is updated every frame in accordance to Verlet. This video shows cloth as well as other Verlet simulations.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/10740521"
+    },
     "link": "http://vimeo.com/10740521"
   },
   "terrain_lod": {
     "date": "2010-5-10",
     "title": "Terrain (Dynamic LOD)",
     "desc": "<p>I implemented a patch based level-of-detail scheme that renders terrain dynamically. It uses a stitching algorithm to blend the different LOD patches together to avoid discontinuity and gaps in the surface mesh.&nbsp;Furthermore, I implemented frustum culling with a quad tree to eliminate unneeded rendering when the geometry is unable to be seen.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/11623178"
+    },
     "link": "http://vimeo.com/11623178"
   },
   "hdr": {
     "date": "2014-5-3",
     "title": "High Dynamic Range",
     "desc": "<p>High Dynamic Range (HDR) is just a fancy term for “storing color values much greater than the usual 0.0f to 1.0f used in graphics”. Unlike conventional colors used in graphics, where color values are bound to the range [0.0, 1.0], the color values in HDR has a greater range. It uses <strong>tone-mapping</strong> to map high-ranged values to the low-range of the monitor. The advantage of HDR is that your scenes appear more realistic than traditional methods.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/10740034"
+    },
     "link": "http://vimeo.com/10740034"
   },
   "Lichtenstein": {
     "date": "2011-9-29",
     "title": "Lichtenstein Shader",
     "desc": "<p>I wanted to reproduce the aesthetic that was popularized by <a href='http://en.wikipedia.org/wiki/Roy_Lichtenstein'>Roy Lichtenstein</a> in the 1960s. However, I wanted to do it procedurally in real-time using actual 3D models. The shader processes the frame buffer and applies hatching by staggering the pixel’s luminosity. The hatching is done procedurally in the pixel shader and requires no texture lookups. For the edges, a simple <a href='http://www.roborealm.com/help/Sobel.php'>sobel filter</a> kernel was used to detect the edges.</p>",
-    "link": "#"
+    "more_links": {
+    	"Screenshot 1":"LINK",
+    	"Screenshot 2":"LINK"
+    },
+    "link": "LINK"
   },
   "3ds_animation": {
     "date": "2010-7-14",
     "title": "Animation &amp; Skinning",
     "desc": "<p><strong>Skinning</strong> is a popular method of performing real-time deformation of polygon meshes by way of associated bones/joints of an articulated skeleton. Skinning displaces vertices by weights given by the skeletal bone structure. The vertices are displaced in the vertex shader by binding to certain animation matrices.</p>",
-    "link": "http://vimeo.com/13350406"
-  },
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/13350406"
+    },
+    "link": "http://vimeo.com/13350406"  },
   "3ds": {
     "date": "2010-6-11",
     "title": "3DS-Max Exporter",
     "desc": "<p>I’ve implemented my own custom <strong>plugin</strong> for 3ds-Max that exports meshes and animations to my own custom format. My engine reads in my custom format and displays the meshes in real-time. This video shows the result as well as displaying  my exploration into <strong>Gooch shading</strong> to achieve the golden hue. The model also uses simple phong lighting and specular highlights to achieve that glossy look.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/12500675"
+    },
     "link": "http://vimeo.com/12500675"
   },
   "edbonics": {
     "date": "2010-6-20",
     "title": "Custom Scripting Language",
     "desc": "<p>I’ve coded my own custom scripting language (called Edbonics) and a virtual machine to run the script. My scripting language is first lexically analyzed for tokens and then parsed into a graph. The parsed graph is fed into the code generator in order to convert the script into byte-code. The <strong>virtual machine</strong>, which is tightly integrated into my 3D engine, then runs the byte-code.</p>",
-    "link": "SITE"
+    "more_links": {
+    	"Source Code":"LINK",
+    	"Sample Script":"LINK"
+    },
+    "link": "LINK"
   },
   "shadow_mapping": {
     "date": "2010-4-7",
     "title": "Dynamic Shadow Mapping",
     "desc": "<p>Dynamic shadow mapping implemented in C++ and DirectX10. Basically what the algorithm does is it renders the depth of the entire scene onto a render target from the perspective of the light. Then, it renders the scene again from the initial camera position. In the pixel shader, I compared the depths of each pixel to the first render target to determine if that pixel should be occluded by a shadow.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/10751669"
+    },
     "link": "http://vimeo.com/10751669"
   },
   "ssao": {
     "date": "2010-6-10",
     "title": "Screen Space Ambient Occlusion",
     "desc": "<p>Screen Space Ambient Occlusion (SSAO) is a rendering technique for efficiently approximating the ambient occlusion effect in real-time. The algorithm is executed purely on the computer’s GPU and implemented in the pixel shader, in which it analyzes the scene depth buffer which is stored in a texture. For every pixel on the screen, the pixel shader samples the depth values around the current pixel and tries to compute the amount of ambient occlusion from each of the sampled points.</p>",
+    "more_links": {
+    	"Presentation Slides":"LINK"
+    },
     "link": "SITE"
-  },
-  "udp": {
-    "date": "2010-10-10",
-    "title": "Network Space Shooter (UDP)",
-    "desc": "<p>Using the <a href='http://en.wikipedia.org/wiki/User_Datagram_Protocol'>UDP protocol</a>, I coded a small mini-game in C++ which involves a simple 2D space shooter.  Using the <a href='http://code.google.com/p/libmnet/'>mnet library</a>, a thin wrapper around <a href='http://www.boost.org/'>Boost’s ASIO</a> libraries, I developed a client-server model in which mulitple clients can log on to one server and play in the same arena. Have fun!</p>",
-    "link": "http://vimeo.com/15723357"
   },
   "perlin_music": {
     "date": "2011-10-6",
     "title": "Procedurally Generated Music",
     "desc": "<p>Have you ever wondered what Perlin noise sounds like in musical form? Well, this app featured procedurally generated music that uses Perlin to conduct the harmony. The system iterates through a standard I-IV-V chord progression on the C-major scale and procedurally chooses the notes to be played.</p>",
-    "link": "http://vimeo.com/30135045"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/30135045"
+    },
+    "link": "http://vimeo.com/30135045",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/PerlinSymphony.zip"}
   },
+
+  "udp": {
+    "date": "2010-10-10",
+    "title": "Network Space Shooter (UDP)",
+    "desc": "<p>Using the <a href='http://en.wikipedia.org/wiki/User_Datagram_Protocol'>UDP protocol</a>, I coded a small mini-game in C++ which involves a simple 2D space shooter.  Using the <a href='http://code.google.com/p/libmnet/'>mnet library</a>, a thin wrapper around <a href='http://www.boost.org/'>Boost’s ASIO</a> libraries, I developed a client-server model in which mulitple clients can log on to one server and play in the same arena. Have fun!</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/15723357",
+    	"Source Code":"LINK"
+    },
+    "link": "http://vimeo.com/15723357"
+  },
+  
   "zen_machine": {
     "date": "2010-11-16",
     "title": "Zen Machine",
     "desc": "<p>In an effort to mix color theory and music creation, I have concocted this visual music composer application. Each color on the wheel corresponds to one musical note in the C-Maj-7th chord. Coded in C++ using OpenFrameworks.</p>",
-    "link": "http://vimeo.com/16892078"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/20192820"
+    },
+    "link": "http://vimeo.com/16892078",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/BlackStar.zip"}
   },
 
   "zen_galaxy": {
     "date": "2011-2-12",
     "title": "Zen Galaxy (Ribbon Boids)",
     "desc": "<p>Uses Craig Reynoid’s flocking algorithm (<a href='http://en.wikipedia.org/wiki/Boids'>Boids</a>) mixed in with some 3D Perlin Noise to generate the semi-random behavoir. The camera follows the boid cluster via a mass-spring damper physics system in order keep the camera movement smooth. Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p>",
-    "link": "http://vimeo.com/19870442"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/19870442"
+    },
+    "link": "http://vimeo.com/19870442",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/ZenMachine.zip"}
   },
   "ribbons": {
   	"highlight":1,
     "date": "2011-6-19",
     "title": "Colors &amp; Movement",
     "desc": "<p>This piece was heavily inspired by the movement and opacity of the ribbons from the Chinese ribbon dance. The movement of the lines are controlled by Perlin noise, which is one of the most delicious algorithms for natural movement. </p> <p>I began coding a new rendering engine from scratch (C++/OpenGL) and decided to use this visualizer as a proof-of-tech that the engine can actually render stuff on screen.  </p>",
-    "link": "http://vimeo.com/25309612"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/25309612"
+    },
+    "link": "http://vimeo.com/25309612",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/ColorMovement.zip"}
   },
 
   "space_glue": {
     "date": "2011-3-2",
     "title": "Space Glue (Metaballs)",
     "desc": "<p>Metaballs is an extremely effective way of rendering isosurfaces. This project utilizes a 2D rendition of the metaballs algorithm in which it uses simple distance calculation of points in the pixel shader. Coded in C++ using Cinder.</p>",
-    "link": "http://vimeo.com/20549084"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/20549084"
+    },
+    "link": "http://vimeo.com/20549084",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/Metaballs.zip"}
   },
 
   "space_synth": {
     "date": "2012-11-27",
     "title": "Space Synth",
     "desc": "<p>Arpeggiator simulator coded in HTML5 and Javascript, uses the <a href='https://github.com/oampo/Audiolet'>audiolet</a> library. I do believe that synthesizers in space is the most badass concept known to mankind, so I had to pay tribute. </p> <p>It generates arpeggio (melody) pattern based on whatever chord you hold down, which includes the classic up, down, converge and diverge, as well as some custom arps that I’ve designed. (11/27/2012)</p>",
-    "link": "http://illogictree.com/games/space-synth/"
+    "link": "http://illogictree.com/games/space-synth/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/games/space-synth/"}
   },
   "monocle": {
     "date": "2011-11-24",
     "title": "Father’s Monocle",
     "desc": "<p>A real-time flocking algorithm which was exhibited at the <a href='http://www.dca.org.uk/'>Dundee Contemporary Arts</a> centre in Scotland.</p> <p>This was a collaboration effort with German artist <a href='http://www.torstenlauschmann.com/'>Torsten Lauschmann</a> for his <a href='http://www.dca.org.uk/whats-on/exhibitions/startle-reaction.html'>Startled Reactions</a> exhibition series (October 2011).</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/32641924"
+    },
     "link": "https://vimeo.com/32641924"
   },
   "phonograph": {
     "date": "2012-11-5",
     "title": "Phonograph",
     "desc": "<p>Another HTML5/Javascript/Canvas music visualiser. Pulls data from SoundCloud and does FFT analysis.</p>",
-    "link": "http://illogictree.com/app/phonograph/"
+    "link": "http://illogictree.com/app/phonograph/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/app/phonograph/"}
   },
   "obsidian": {
     "date": "2012-11-26",
     "title": "Obsidian",
     "desc": "<p>If you stare long enough at this, it will reprogram your mind. </p> <p>Coded in HTML5 Canvas and Javascript.</p>",
-    "link": "http://illogictree.com/games/obsidian/"
+    "link": "http://illogictree.com/games/obsidian/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/games/obsidian"}
   },
   "joy_divisor": {
     "date": "2012-11-29",
     "title": "Joy Divisor",
     "desc": "<p>Every time I see the classic album cover for Joy Division’s <a href='http://en.wikipedia.org/wiki/Unknown_Pleasures'>Unknown Pleasures</a>, I always cannot help but wonder what the visual will look like moving in-real time.  So I did it!</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis.</p>",
-    "link": "http://illogictree.com/app/joy-divisor/"
+    "link": "http://illogictree.com/app/joy-divisor/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/app/joy-divisor/"}
   },
   "aquatic_pixels": {
     "date": "2011-12-3",
     "title": "Aquatic Pixels",
     "desc": "<p>Aquatic Pixels is my first visual using HTML5 Canvas and Javascript. I was heavily inspired by the beautiful aesthetic aquariums. Best viewed in Google Chrome. Artwork by Mike Hussinger.</p>",
-    "link": "http://illogictree.com/games/aquatic-pixels/"
+    "link": "http://illogictree.com/games/aquatic-pixels/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/games/aquatic-pixels/"}
   },
   "magical_mystery": {
     "date": "2012-1-13",
     "title": "Mini WebGL Experiments",
     "desc": "<p>This is just me trying out various small WebGL experiments. WebGL is quite neat and it is great to <em>finally</em> have proper graphics hardware support on web surfaces. However, I have decided not to dive too deep in to WebGL because the lack of operator-overload support in Javascript deeply disturbed me.</p>",
-    "link": "http://illogictree.com/games/magical-mystery/"
+    "more_links": {
+    	"Experiment 2":"http://glsl.heroku.com/e#1405.9/",
+    	"Experiment 3":"http://glsl.heroku.com/e#1410.3"
+    },
+    "link": "http://illogictree.com/games/magical-mystery/",
+    "btn": {"text":"View (HTML5)", "link":"http://illogictree.com/games/magical-mystery/"}
   },
   "organic_splines": {
     "date": "2010-11-30",
     "title": "Organic Spline Particles",
     "desc": "<p>Using <a href='http://openframeworks.cc/'>OpenFrameworks</a>, I coded this wiggly little particle system that renders organic-looking tentacles in real-time. I was heavily inspired from the movement of <a href='http://en.wikipedia.org/wiki/Tube-dwelling_anemone'>underwater anemones</a> and decided to try to imitate its behavior.</p> <p>With 2D <a href='http://en.wikipedia.org/wiki/Cubic_Hermite_spline'>Hermite splines</a>, I was able to render the curves in color-shaded line segments. The tangents and positions are warped slightly every frame using sinusoidal waves to give that life-like wiggly behavior.</p>",
-    "link": "http://vimeo.com/17319264"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/17319264"
+    },
+    "link": "http://vimeo.com/17319264",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/Wiggles.zip"}
   },
   "fish_flock": {
     "date": "2010-11-13",
     "title": "Fish Group Behavior – AI",
     "desc": "<p>Based on the algorithm developed by <a href='http://www.red3d.com/cwr/boids/'>Craig Reynolds</a>, “Boids” is an artificial life program which endeavors to simulate the flocking behavior of birds. The movement of each entity is governed by three simple rules: separation, alignment and cohesion. The result is this group behavior that appears natural and “emergent”. Coded in C++ using <a href='http://openframeworks.cc/'>OpenFrameworks</a>.</p>",
-    "link": "http://vimeo.com/16799353"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/16799353"
+    },
+    "link": "http://vimeo.com/16799353",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/Fish.zip"}
   },
   "conway_3d": {
     "date": "2011-2-10",
     "title": "Conway’s Game of Life 3D",
     "desc": "<p>In an effort to bring the classical Conway’s Game of Life in to the 3D realm, I coded this sample 3D application in C++ using <a href='http://libcinder.org/'>Cinder</a>. </p> <p>Basically, what’s going on is you apply the traditional cellular automata rules in 3D space. That is, instead of checking the surrounding 8 neighbors like you do in 2D space, you check the 26 neighbors in 3D space. </p>",
-    "link": "http://vimeo.com/19809751"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/19809751"
+    },
+    "link": "http://vimeo.com/19809751",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/Conway3D.zip"}
   },
   "circuit_board": {
     "date": "2011-10-25",
     "title": "Circuit Board Generator",
     "desc": "<p>The circuit boards are procedurally generated by randomly placing nodes and processors on the circuit board and then using <a href='http://en.wikipedia.org/wiki/A*_search_algorithm'>A-Star search algorithm</a> to connect the nodes. Using A-star prevents any wires from overlapping and causes the visual to have that flowing aesthetic.</p>",
-    "link": "http://vimeo.com/31083903"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/31083903",
+    	"Screenshot":"LINK",
+    	"Screenshot 2":"LINK"
+    },
+    "link": "http://vimeo.com/31083903",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/CircuitBoard.zip"}
   },
   "fractal_trees": {
     "date": "2010-11-12",
     "title": "Fractal Trees",
     "desc": "<p>I used fractals to generate randomized trees. Starting from the trunk of the tree, it’s children nodes can be procedurally generated by applying certain conditions during the the formation of budding branches. Coded in Processing. </p>",
-    "link": "http://vimeo.com/16758532"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/16758532"
+    },
+    "link": "http://vimeo.com/16758532",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/tree_win.zip"}
   },
   "delaunay": {
     "date": "2011-5-8",
     "title": "Delaunay Triangulation",
     "desc": "<p><a href='http://en.wikipedia.org/wiki/Delaunay_triangulation'>Delaunay triangulation</a> takes a set of points and builds a triangulation such that satisfies the “empty circle” property. That is, for each triangle, we can circumscribe a circle such that no other points in the set can exist in the circle. The output of the triangulated graph produces the nearest neighbor graph of a given points. It has practical uses in geometry reconstruction and meshing of points.</p>",
-    "link": "http://vimeo.com/23434599"
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/23434599"
+    },
+    "link": "http://vimeo.com/23434599",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/Delaunay.zip"}
   },
   "lockless_queue": {
     "date": "2010-9-5",
     "title": "Lockless Queue",
     "desc": "<p>A lockless queue is a thread-safe queue that allows the user to push and pop elements from from different threads without any locking mechanisms. These containers are the most essential means of concurrent computation, since they allow threads to be decoupled somewhat while staying synchronized.</p>",
-    "link": "SITE"
+    "more_links": {
+    	"Source Code":"LINK"
+    },
+    "link": "LINK"
   },
   "video_convertor": {
     "date": "2010-9-25",
     "title": "Eddie’s Intergalactic Video Converter",
     "desc": "<p> I made a small app that handles exporting videos to SD and HD compression schemes for <a href='http://youtube.com/'>YouTube</a> or <a href='http://vimeo.com/'>Vimeo</a>. I designed the app to be simple to use and minimalistic in it’s interface. It simply loads the source video file and exports it out with the settings you choose. With <a href='http://ffmpeg.org/'>ffmpeg</a> at its core, it uses <a href='http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC'>h.264</a> to compress the video and <a href='http://en.wikipedia.org/wiki/Advanced_Audio_Coding'>AAC</a> to compress the audio.</p>",
-    "link": "http://illogictree.com/upload/site/EddiesVideoConvertor.zip"
+    "link": "http://illogictree.com/upload/site/EddiesVideoConvertor.zip",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/upload/site/EddiesVideoConvertor.zip"}
   },
   "BSP": {
     "date": "2010-9-22",
     "title": "BSP",
     "desc": "<p>One of my first projects when switching over from 2D to 3D-land was to render one of the <a href='http://en.wikipedia.org/wiki/Binary_space_partitioning'>BSP</a> levels from Quake III. BSP trees divide a region of space into two subregions at each node; thus, the BSP tree can be traversed in O(log-n) from an arbitrary viewpoint. It uses frustum culling and PVS (potential visible sets) to cull out geometry that is not viewable to the user. It also has ray-tracing and collision detection, which is also an O(log-n) operation.</p>",
+    "more_links": {
+    	"Vimeo":"http://vimeo.com/15200811"
+    },
     "link": "http://vimeo.com/15200811"
   },
 
@@ -376,12 +510,14 @@
     "date": "2007-6-25",
     "title": "Statistical Filtering of Global Illumination",
     "desc": "<p>During my research at IPAM (Institute of Pure and Applied Mathemetics) at UCLA, my research team published a paper prepared for <strong>Pixar</strong> in which my team developed algorithms to handle statistical denoising for global illumination.</p>",
-    "link": "http://illogictree.com/upload/site/Pixar_final_report.pdf"
+    "link": "http://illogictree.com/upload/site/Pixar_final_report.pdf",
+    "btn": {"text":"Download (.pdf)", "link":"http://illogictree.com/upload/site/Pixar_final_report.pdf"}
   },
   "2d_editor": {
     "date": "2009-9-6",
     "title": "2D Level Editor",
     "desc": "<p>My first C++ project involved coding my own 2D level editor. It uses <a href='http://www.libsdl.org/'>SDL</a> for cross-platform portability. The editor manages various visual layers and tilesheets for the visual layout of the scene. It also handles the scene’s meta-data (such as non-walkable areas, teleports, etc) as well as sprite entities (NPCs, interactable objects) and sounds. It imports and exports the level data into a custom format.</p>",
-    "link": "SITE"
+    "link": "http://illogictree.com/wp-content/uploads/2010/09/PsyEditor.zip",
+    "btn": {"text":"Download (.exe)", "link":"http://illogictree.com/wp-content/uploads/2010/09/PsyEditor.zip"}
   }
 }
