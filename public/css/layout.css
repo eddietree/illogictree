@@ -27,10 +27,21 @@ body > .container {
 	padding: 1em;
 }
 
-
 .project-item .desc
 {
+	
+}
+
+.project-item .more-links
+{
 	font-size: 12px;
+	margin-top: 1.5em;
+	text-transform: uppercase;
+}
+
+.project-item a.btn
+{
+	margin-top: 0.5em;
 }
 
 .project-item .desc-footer

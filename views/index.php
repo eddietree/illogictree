@@ -17,7 +17,7 @@ echo "<code>";
 var_dump($projects);
 echo "</code>";*/
 
-echo $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
+//echo $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
 
 ?>
 
@@ -48,10 +48,26 @@ echo $_SERVER{'DOCUMENT_ROOT'} . '/public/images/projects/';
 
             <div class="item <?php if( property_exists($project,'highlight') ) echo "w2" ?> ">
                 <div class="project-item">
-                    <a href="#"><img class="img-responsive" alt="<?= $project->title ?>" src="<?= $img_full_path ?>"/></a>
+                    <a href="<?= $project->link ?>"><img class="img-responsive" alt="<?= $project->title ?>" src="<?= $img_full_path ?>"/></a>
                     <h3><?= $project->title;?></h3>
                     <div class="info">
                         <div class="desc"><?= $project->desc;?></div>
+
+                        <?php if ( property_exists($project, 'more_links')) { ?>
+                            <p class="more-links">
+
+                            <?php foreach( $project->more_links as $link_title => $link_url ) { ?>
+                                <a href="<?= $link_url ?>"><?= $link_title ?></a>
+                                <?php  if ($link_url !== end($project->more_links)) echo "//" ?>
+                            <?php } ?>
+
+                            </p>
+                        <?php } ?>
+
+                        <?php if ( property_exists($project, 'btn')) { ?>
+                        <a href="<?= $project->btn->link ?>" class="btn btn-info btn-xs active" role="button"><?= $project->btn->text ?></a>
+                        <?php } ?>
+
                         <div class="desc-footer"><span class="date"><?= date("M j, o", strtotime($project->date)) ?></span></div>
                     </div>
                 
