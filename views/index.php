@@ -5,6 +5,12 @@
 
 
 <?php
+
+echo $_SERVER{'DOCUMENT_ROOT'} . '/images/projects/';
+echo "<br/>";
+echo $_SERVER{'HTTP_HOST'};
+var_dump($_SERVER);
+
 $file = "http://localhost/data.json";
 $string = file_get_contents($file);
 $results = json_decode($string);
@@ -17,7 +23,7 @@ echo "<code>";
 var_dump($projects);
 echo "</code>";*/
 
-echo $_SERVER{'DOCUMENT_ROOT'} . '/images/projects/';
+
 
 ?>
 
