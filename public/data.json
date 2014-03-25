@@ -101,7 +101,7 @@
   },
   "cloth_verlet": {
     "date": "2014-5-3",
-    "title": "Cloth Simulation (Verlet Integration)",
+    "title": "Cloth Simulation",
     "desc": "<p>Cloth simulated through classical Verlet Integration as explained in this <a href='http://www.gamasutra.com/resource_guide/20030121/jacobson_pfv.htm'>paper</a>. In this simulation, the cloth is being represented by vertices that are connected by line segments. Every line is a constraint and every vertex is a point mass (an object with no dimension, just location and mass). Gravity and other forces are applied to the system while the constraints keep the system intact. Each vertex is updated every frame in accordance to Verlet. This video shows cloth as well as other Verlet simulations.</p>"
   },
   "terrain_lod": {
@@ -160,6 +160,7 @@
     "desc": "<p>Uses Craig Reynoid’s flocking algorithm (<a href='http://en.wikipedia.org/wiki/Boids'>Boids</a>) mixed in with some 3D Perlin Noise to generate the semi-random behavoir. The camera follows the boid cluster via a mass-spring damper physics system in order keep the camera movement smooth. Coded in C++ using the <a href='http://libcinder.org/'>Cinder</a> library.</p>"
   },
   "ribbons": {
+  	"highlight":1,
     "date": "2014-5-3",
     "title": "Colors &amp; Movement",
     "desc": "<p>This piece was heavily inspired by the movement and opacity of the ribbons from the Chinese ribbon dance. The movement of the lines are controlled by Perlin noise, which is one of the most delicious algorithms for natural movement. </p> <p>I began coding a new rendering engine from scratch (C++/OpenGL) and decided to use this visualizer as a proof-of-tech that the engine can actually render stuff on screen.  </p>"
@@ -180,14 +181,14 @@
     "desc": "<p>Another HTML5/Javascript/Canvas music visualiser. Pulls data from SoundCloud and does FFT analysis.</p>"
   },
   "obsidian": {
-    "date": "2014-5-3",
+    "date": "2012-11-26",
     "title": "Obsidian",
-    "desc": "<p>If you stare long enough at this, it will reprogram your mind. </p> <p>Coded in HTML5 Canvas and Javascript.  (11/26/2012)</p>"
+    "desc": "<p>If you stare long enough at this, it will reprogram your mind. </p> <p>Coded in HTML5 Canvas and Javascript.</p>"
   },
   "joy_divisor": {
-    "date": "2014-5-3",
+    "date": "2014-11-29",
     "title": "Joy Divisor",
-    "desc": "<p>Every time I see the classic album cover for Joy Division’s <a href='http://en.wikipedia.org/wiki/Unknown_Pleasures'>Unknown Pleasures</a>, I always cannot help but wonder what the visual will look like moving in-real time.  So I did it!</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis. (11/29/2012)</p>"
+    "desc": "<p>Every time I see the classic album cover for Joy Division’s <a href='http://en.wikipedia.org/wiki/Unknown_Pleasures'>Unknown Pleasures</a>, I always cannot help but wonder what the visual will look like moving in-real time.  So I did it!</p> <p>Coded in HTML5 Canvas and Javascript. Pulls data from SoundCloud and does FFT analysis.</p>"
   },
   "aquatic_pixels": {
     "date": "2014-5-3",
@@ -229,7 +230,7 @@
     "title": "Delaunay Triangulation",
     "desc": "<p><a href='http://en.wikipedia.org/wiki/Delaunay_triangulation'>Delaunary triangulation</a> takes a set of points and builds a triangulation such that satisfies the “empty circle” property. That is, for each triangle, we can circumscribe a circle such that no other points in the set can exist in the circle. The output of the triangulated graph produces the nearest neighbor graph of a given points. It has practical uses in geometry reconstruction and meshing of points.</p>"
   },
-  "Lockless": {
+  "lockless_queue": {
     "date": "2014-5-3",
     "title": "Lockless Queue",
     "desc": "<p>A lockless queue is a thread-safe queue that allows the user to push and pop elements from from different threads without any locking mechanisms. These containers are the most essential means of concurrent computation, since they allow threads to be decoupled somewhat while staying synchronized.</p>"
@@ -244,12 +245,8 @@
     "title": "BSP",
     "desc": "<p>One of my first projects when switching over from 2D to 3D-land was to render one of the <a href='http://en.wikipedia.org/wiki/Binary_space_partitioning'>BSP</a> levels from Quake III. BSP trees divide a region of space into two subregions at each node; thus, the BSP tree can be traversed in O(log-n) from an arbitrary viewpoint. It uses frustum culling and PVS (potential visible sets) to cull out geometry that is not viewable to the user. It also has ray-tracing and collision detection, which is also an O(log-n) operation.</p>"
   },
-  "Particle": {
-    "date": "2014-5-3",
-    "title": "Particle System",
-    "desc": "<p>Implemented in C++ and OpenGL, this simulation features several particle system simulations, including fireworks, smoke effect, debris and water fountain. It uses simple Euler integration to handle the physical updating of each particle. Each simulation is a result of applying different forces to the particles each update.</p>"
-  },
-  "Statistical": {
+
+  "pixar": {
     "date": "2014-5-3",
     "title": "Statistical Filtering of Global Illumination",
     "desc": "<p>During my research at IPAM (Institute of Pure and Applied Mathemetics) at UCLA, my research team published a paper prepared for <strong>Pixar</strong> in which my team developed algorithms to handle statistical denoising for global illumination.</p>"
